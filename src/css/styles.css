@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+@font-face {
+    font-family: supplyRegular;
+    src: url(./fonts/PPSupplyMono-Regular.otf);
+}
+
+@font-face {
+    font-family: supplyLight;
+    src: url(./fonts/PPSupplyMono-Ultralight.otf);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    font-family: 'Oswald', sans-serif;
+    margin: 20px;
+}
+
+nav {
+    background: #1c1626;
+    color: #fefffb;
+}
+
+.navs {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.nav {
+    display: inline-block;
+}
+
+.nav a {
+    display: inline-block;
+    color: #fefffb;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.logo {
+    font-family: "supplyRegular";
+    font-size: 20px;
+}
+
+.nav a.links{
+
+    font-family: "supplyLight";
+}
+
+footer {
+    background: #1c1626;
+    color: #fefffb;
+    font-family: "supplyLight";
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.color-white {
+    color: #fefffb;
+}
+
+.color-black {
+    color: #1c1626;
+}
+
+.color-red {
+    color: #ff2961;
+}
+
+.post-lists {
+    margin-top: 10px;
+}
+
+.post-data {
+    margin-bottom: 10px;
+}
+
+.post-date {
+    font-size: 15px;
+}
+
+.post-title {
+    font-size: 20px;
+}
+
+a {
+    color: #ff2961;
+    font-family: 'Oswald', sans-serif;
+}
+
