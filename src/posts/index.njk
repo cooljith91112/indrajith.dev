@@ -3,18 +3,23 @@ layout: base.njk
 eleventyExcludeFromCollections: true
 title: Posts
 ---
-<h2>Posts</h2>
-<div class="post-lists">
-    {% for post in collections.posts %}
+<h2 class="text-2xl font-bold  text-black p-2">Published Posts</h2>
+<div class="post-lists mt-2">
+    {% for post in collections.posts | reverse %}
         <div class="post-data">
-            <div class="post-date">
+            <div class="post-date p-2 bg-purple-700 text-white shadow-[5px_5px_0px_0px_rgba(0,0,0,255)]">
                 {{post.date | dateFilter}}
             </div>
-            <div class="post-title color-red">
+            <div class="post-title m-4 text-red-600 hover:text-black">
                <a href="{{post.url}}"> {{post.data.title}}</a> 
             </div>
         </div>
-    
+    {% else %}
+        <div class="text-center flex justify-center text-red-600">
+            <span>No Posts </span>
+            <span class="pl-2">{% feather "frown" %}</span>
+        </div>
     {% endfor %}
+    
 </div>
 

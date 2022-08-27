@@ -1,5 +1,31 @@
 ---
-layout: base.njk
-title: Hello
+layout: intro.njk
+title: "Hello Friend!! My name is Indrajith K L."
 ---
-<h1 class="text-center">Website Under Maintenance</h1>
+<div class="flex w-full">
+    <div class="bg-yellow-500 text-xl text-black font-supply-regular shadow-[5px_5px_0px_0px_rgba(0,0,0,255)] p-10 mt-10">
+        <p class="text-2xl">{{title}}</p>
+        <p class="mt-3 text-justify">
+            I'm a web developer, hobbyist game developer from Kerala, India working as a front-end developer.
+            This site is where I write about my fun side projects, R&amp;D's, random thoughts, game development etc. Since you here why don't you read some posts from <a href="/posts" class="text-red-700"> here</a>.
+        </p>
+    </div>
+</div>
+
+<div class="mt-10 mb-10">
+    <h2 class="text-lg font-bold bg-purple-500 text-black p-2 shadow-[5px_5px_0px_0px_rgba(0,0,0,255)]">Recent Posts</h2>
+    <div class="posts flex flex-col mt-10 md:flex-row">
+        {% for post in collections.posts | reverse %}
+            {% if (loop.index <= 4) %}
+                <div class="p-6 bg-violet-700 text-white shadow-[5px_5px_0px_0px_rgba(0,0,0,255)] mr-10 mb-5">
+                    <p class="text-md font-extrabold line-clamp-1">{{post.data.title}}</p>
+                    <div class="justify-end float-right mt-5"><a href="{{post.url}}">{% feather "arrow-right" %}</a></div>
+                </div>
+            {% endif %}
+        {% else %}
+            <div class="p-6 bg-sky-700 text-white shadow-[5px_5px_0px_0px_rgba(0,0,0,255)] mr-10 mb-5">
+                    <p class="text-md font-extrabold line-clamp-1">No Posts</p>
+            </div>
+        {% endfor %}
+    </div>
+</div>

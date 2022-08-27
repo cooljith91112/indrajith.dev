@@ -1,0 +1,28 @@
+<header class="w-full bg-black text-yellow-500 flex justify-between items-center px-6 py-4">
+    <nav class="w-full">
+        <ul class="flex gap-10 font-supply-regular w-full items-center text-xl">
+            <li>
+                <a href="/" class="text-3xl">{ indrajith.dev } </a>
+            </li>
+            <li class="hover:text-white"><a href="/about" id="about" class="links">About</a></li>
+            <li class="hover:text-white"><a href="/posts" id="posts" class="links">Posts</a></li>
+            <li class="hover:text-white"><a href="/cv" id="cv" class="links">CV</a></li>
+        </ul>
+        <ul class="hidden md:flex flex-row gap-10 font-supply-regular right-0 -my-8 mx-6 absolute">
+            <li><a title="Twitter" href="https://twitter.com/indrajithKLIS" class="links">{% feather "twitter" %}</a></li>
+            <li><a title="Github" href="https://github.com/cooljith91112" class="links">{% feather "github" %}</a></li>
+            <li><a title="LinkedIn" href="https://www.linkedin.com/in/indrajithklis/" class="links">{% feather "linkedin" %}</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+(function(){
+    const currentLocation = location.pathname;
+    const navs = ["about","posts","cv"];
+    const currentNav = navs.find(nav=>currentLocation.includes(nav));
+    if (currentNav) {
+        document.getElementById(currentNav).parentElement.classList.add("text-black-600");
+    }
+})();
+</script>

@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 @font-face {
@@ -22,86 +26,123 @@ body {
     min-height: 100vh;
 }
 
-main {
-    flex: 1;
-    font-family: 'Oswald', sans-serif;
-    margin: 20px;
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #657b83; /* base00 */
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
 }
 
-nav {
-    background: #1c1626;
-    color: #fefffb;
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	background: #073642; /* base02 */
 }
 
-.navs {
-    list-style-type: none;
-    padding-left: 0;
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	background: #073642; /* base02 */
 }
 
-.nav {
-    display: inline-block;
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
 }
 
-.nav a {
-    display: inline-block;
-    color: #fefffb;
-    text-decoration: none;
-    padding: 10px;
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background-color: #fdf6e3; /* base3 */
 }
 
-.logo {
-    font-family: "supplyRegular";
-    font-size: 20px;
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
 }
 
-.nav a.links{
-
-    font-family: "supplyLight";
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #93a1a1; /* base1 */
 }
 
-footer {
-    background: #1c1626;
-    color: #fefffb;
-    font-family: "supplyLight";
-    padding: 10px;
-    font-size: 15px;
-    text-align: center;
+.token.punctuation {
+	color: #586e75; /* base01 */
 }
 
-.color-white {
-    color: #fefffb;
+.token.namespace {
+	opacity: .7;
 }
 
-.color-black {
-    color: #1c1626;
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #268bd2; /* blue */
 }
 
-.color-red {
-    color: #ff2961;
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.url,
+.token.inserted {
+	color: #2aa198; /* cyan */
 }
 
-.post-lists {
-    margin-top: 10px;
+.token.entity {
+	color: #657b83; /* base00 */
+	background: #eee8d5; /* base2 */
 }
 
-.post-data {
-    margin-bottom: 10px;
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #859900; /* green */
 }
 
-.post-date {
-    font-size: 15px;
+.token.function,
+.token.class-name {
+	color: #b58900; /* yellow */
 }
 
-.post-title {
-    font-size: 20px;
+.token.regex,
+.token.important,
+.token.variable {
+	color: #cb4b16; /* orange */
 }
 
-a {
-    color: #ff2961;
-    font-family: 'Oswald', sans-serif;
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
 }
 
-.text-center{
-    text-align: center;
+.token.entity {
+	cursor: help;
 }
-
