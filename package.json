@@ -8,7 +8,7 @@
     "tailwind:build": "npx postcss src/css/styles.css --o src/_includes/assets/css/styles.css",
     "serve": "eleventy --serve",
     "start": "concurrently \"npm run tailwind:process\" \"npm run serve\"",
-    "build": "npm run tailwind:build && eleventy"
+    "build": "eleventy && npm run tailwind:build"
   },
   "keywords": [],
   "author": "",
