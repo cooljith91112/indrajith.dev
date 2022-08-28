@@ -1,4 +1,4 @@
 #!/usr/bin/zsh
 npm run build
 cd public
-mv -v ./* /var/www/html
+mv -v -f ./* /var/www/html
