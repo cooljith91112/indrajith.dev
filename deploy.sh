@@ -1,4 +1,8 @@
 #!/usr/bin/zsh
 npm run build
 cd public
-mv -v -f ./* /var/www/html
+PROJECTDIR=$(pwd)
+cd /var/www/html
+rm -R ./*
+cd $PROJECTDIR
+cp -rp ./* /var/www/html/
