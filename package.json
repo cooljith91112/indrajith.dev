@@ -9,7 +9,8 @@
     "serve": "eleventy --serve",
     "eleventy": "eleventy",
     "start": "concurrently \"npm run tailwind:process\" \"npm run serve\"",
-    "build": "npm run eleventy && npm run tailwind:build"
+    "build": "npm run tailwindcli:build && npm run eleventy",
+    "tailwindcli:build":"npx tailwindcss -i src/css/styles.css -o src/_includes/assets/css/styles.css"
   },
   "keywords": [],
   "author": "",
