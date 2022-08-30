@@ -719,9 +719,6 @@ video {
 .text-justify {
   text-align: justify;
 }
-.align-middle {
-  vertical-align: middle;
-}
 .font-supply-regular {
   font-family: supplyRegular, sans-serif;
 }
