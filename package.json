@@ -10,13 +10,14 @@
     "eleventy": "eleventy",
     "start": "concurrently \"npm run tailwind:process\" \"npm run serve\"",
     "build": "npm run tailwindcli:build && npm run eleventy",
-    "tailwindcli:build":"npx tailwindcss -i src/css/styles.css -o src/_includes/assets/css/styles.css"
+    "tailwindcli:build": "npx tailwindcss -i src/css/styles.css -o src/_includes/assets/css/styles.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
     "@tailwindcss/line-clamp": "^0.4.0",
     "autoprefixer": "^10.4.8",

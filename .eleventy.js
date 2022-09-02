@@ -2,12 +2,13 @@
 
 const dayjs = require("dayjs");
 const faviconPlugin = require("eleventy-favicon");
-const eleventyPluginFeathericons = require('eleventy-plugin-feathericons');
+const eleventyPluginFeathericons = require("eleventy-plugin-feathericons");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (config) {
     config.addPassthroughCopy({
-        'src/_includes/assets/css/styles.css': './styles.css'
+        "src/_includes/assets/css/styles.css": "./styles.css",
     });
     config.addPassthroughCopy({
         "src/css/fonts": "./fonts",
@@ -16,11 +17,16 @@ module.exports = function (config) {
         "src/images": "./images",
     });
     config.addPlugin(faviconPlugin, {
-        destination: './public'
+        destination: "./public",
     });
     config.addWatchTarget("./src/css");
     config.addPlugin(eleventyPluginFeathericons);
     config.addPlugin(syntaxHighlight);
+    config.addPlugin(pluginRss, {
+        posthtmlRenderOptions: {
+            closingSingleTag: "default",
+        },
+    });
 
     config.addFilter("dateFilter", function (date) {
         return dayjs(date).format("DD MMM YYYY");
