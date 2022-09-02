@@ -544,6 +544,9 @@ video {
 .visible {
   visibility: visible;
 }
+.invisible {
+  visibility: hidden;
+}
 .absolute {
   position: absolute;
 }
@@ -611,6 +614,9 @@ video {
 }
 .ml-auto {
   margin-left: auto;
+}
+.block {
+  display: block;
 }
 .inline-block {
   display: inline-block;
@@ -954,6 +960,14 @@ pre[class*="language-"] {
 
 @media (min-width: 768px) {
 
+  .md\:visible {
+    visibility: visible;
+  }
+
+  .md\:invisible {
+    visibility: hidden;
+  }
+
   .md\:absolute {
     position: absolute;
   }
@@ -980,6 +994,10 @@ pre[class*="language-"] {
 
   .md\:mt-auto {
     margin-top: auto;
+  }
+
+  .md\:block {
+    display: block;
   }
 
   .md\:flex {
