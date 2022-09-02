@@ -6,11 +6,11 @@
   "scripts": {
     "tailwind:process": "npx postcss src/css/styles.css --o src/_includes/assets/css/styles.css --watch",
     "tailwind:build": "npx postcss src/css/styles.css --o src/_includes/assets/css/styles.css",
-    "serve": "eleventy --serve",
-    "eleventy": "eleventy",
+    "serve": "npx @11ty/eleventy --serve",
+    "eleventy": "npx @11ty/eleventy",
     "start": "concurrently \"npm run tailwind:process\" \"npm run serve\"",
-    "build": "npm run tailwindcli:build && npm run eleventy",
-    "tailwindcli:build": "npx tailwindcss -i src/css/styles.css -o src/_includes/assets/css/styles.css"
+    "build": "concurrently \"npm run tailwindcli:build\" \"npm run eleventy\"",
+    "tailwindcli:build": "npx tailwindcss -i ./src/css/styles.css -o ./src/_includes/assets/css/styles.css"
   },
   "keywords": [],
   "author": "",
