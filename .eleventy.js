@@ -8,7 +8,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (config) {
     config.addPassthroughCopy({
-        "src/_includes/assets/css/styles.css": "./styles.css",
+        "src/_includes/assets/css/styles.css": "./global.css",
     });
     config.addPassthroughCopy({
         "src/css/fonts": "./fonts",
