@@ -35,5 +35,5 @@ jobs:
         key: ${{ secrets.SSHKEY }}
         passphrase: ${{ secrets.SSH_PASSPHRASE }}
         rm: true
-        source: "public/"
+        source: "public/*"
         target: "${{ secrets.SSH_DIR }}"
