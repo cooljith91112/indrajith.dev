@@ -16,8 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+        node-version: [16.x]
 
     steps:
     - uses: actions/checkout@v3
@@ -31,7 +30,7 @@ jobs:
     - name: Publish
       uses: azurystudio/deploy-action@v0
       with:
-        host: ${{ secrets.SSHKEY }}
+        host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USER }}
         privateKey: ${{ secrets.SSHKEY }}
         destination: ${{ secrets.SSH_DIR }}
