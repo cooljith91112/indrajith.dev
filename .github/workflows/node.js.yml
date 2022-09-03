@@ -34,4 +34,5 @@ jobs:
         username: ${{ secrets.SSH_USER }}
         privateKey: ${{ secrets.SSHKEY }}
         destination: ${{ secrets.SSH_DIR }}
+        passphrase: ${{ secrets.SSH_PASSPHRASE }}
         directory: /public
