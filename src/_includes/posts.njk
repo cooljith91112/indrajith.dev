@@ -3,23 +3,27 @@
 <head>
 {% include "./partials/head.njk" %}
 </head>
-<body>
+<body class="flex h-screen flex-col font-supply-regular">
     {% include "./partials/header.njk" %}
     <main class="container mx-auto max-w-5xl p-8">
         <section class="w-full flex flex-col items-center px-3">
             <article class="flex flex-col my-4">
                 <div class="flex flex-col justify-start p-6 ">
                     <div>
-                        <p class="text-3xl bg-rose font-medium text-center">{{title}}</p>
-                        <p class="text-lg text-gray-500 text-center">{{date | dateFilter}}</p>
+                        <p class="text-3xl bg-rose font-medium text-center text-darkish-200">{{title}}</p>
+                        <p class="text-lg text-darkish-100 text-center">{{date | dateFilter}}</p>
                     </div>
-                    <div class="mt-10 text-xl font-supply-regular text-justify">
+                    <div class="mt-10 text-xl font-supply-regular text-justify text-darkish-300">
                         {{content | safe}}
                     </div>
                 </div>
             </article>
+            <div class="flex flex-col my-4">
+                <a class="flex flex-col justify-start" href="/posts">back to posts</a>    
+            </div>     
         </section>
-        <a href="/posts">back to posts</a>
+        
+        
     </main>
     {% include "./partials/footer.njk" %}
 </body>

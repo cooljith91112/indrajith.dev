@@ -4,27 +4,27 @@ title: Home
 alternatetitle: "Hello Friend!! My name is Indrajith K L."
 ---
 <div class="flex w-full">
-    <div class="bg-yellow-500 text-md md:text-xl text-black font-supply-regular shadow-[5px_5px_0px_0px_rgba(0,0,0,255)] p-3 mt-10 ml-5 mr-5 md:p-10 md:ml-0 md:mr-0">
+    <div class="bg-main-cardbackground text-md md:text-xl text-main-cardheading font-supply-regular shadow-[5px_5px_0px_0px_rgba(0,0,0,255)] p-3 mt-10 ml-5 mr-5 md:p-10 md:ml-0 md:mr-0 rounded-lg">
         <p class="text-lg md:text-2xl font-bold">{{alternatetitle}}</p>
         <p class="mt-3 text-justify">
             I'm a web developer, hobbyist game developer from Kerala, India working as a front-end developer.
-            This site is where I write about my fun side projects, R&amp;D's, random thoughts, game development etc. Since you here why don't you read some <a href="/posts" class="text-black font-bold">posts</a>.
+            This site is where I write about my fun side projects, R&amp;D's, random thoughts, game development etc. Since you here why don't you read some <a href="/posts" class="text-main-cardheading font-bold">posts</a>.
         </p>
     </div>
 </div>
 
-<div class="mt-10 mb-10">
-    <h2 class="text-lg font-bold bg-purple-500 text-black p-2 shadow-[5px_5px_0px_0px_rgba(0,0,0,255)]">Recent Posts</h2>
+<div class="mt-10 mb-10 font-supply-light">
+    <h2 class="text-lg font-bold bg-darkish-100 text-lightish-50 p-2 shadow-[5px_5px_0px_0px_rgba(0,0,0,255)]">Recent Posts</h2>
     <div class="posts flex flex-col mt-10 md:flex-row">
         {% for post in collections.posts | reverse %}
             {% if (loop.index <= 4) %}
-                <div class="p-6 bg-violet-700 text-white shadow-[5px_5px_0px_0px_rgba(0,0,0,255)] mr-10 mb-5">
+                <div class="p-6 bg-darkish-50 text-lightish-50 shadow-[5px_5px_0px_0px_rgba(0,0,0,255)] mr-10 mb-5">
                     <p class="text-md font-extrabold line-clamp-1">{{post.data.title}}</p>
-                    <div class="justify-end float-right mt-5"><a href="{{post.url}}">{% feather "arrow-right" %}</a></div>
+                    <div class="justify-end float-right mt-5 underline font-supply-light"><a href="{{post.url}}">Read more</span></a></div>
                 </div>
             {% endif %}
         {% else %}
-            <div class="p-6 bg-sky-700 text-white shadow-[5px_5px_0px_0px_rgba(0,0,0,255)] mr-10 mb-5">
+            <div class="p-6 bg-darkish-200 text-lightish-50 shadow-[5px_5px_0px_0px_rgba(0,0,0,255)] mr-10 mb-5">
                     <p class="text-md font-extrabold line-clamp-1">No Posts</p>
             </div>
         {% endfor %}

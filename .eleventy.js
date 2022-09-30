@@ -32,6 +32,12 @@ module.exports = function (config) {
         return dayjs(date).format("DD MMM YYYY");
     });
 
+    function filterTagList(tags) {
+        return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
+    }
+
+    config.addFilter("filterTagList", filterTagList)
+
     return {
         dir: {
             input: "src",
