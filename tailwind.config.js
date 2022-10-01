@@ -12,6 +12,28 @@ module.exports = {
         "supply-regular": ["supplyRegular", "sans-serif"],
         "supply-light": ["supplyLight", "sans-serif"],
       },
+      colors: {
+        darkish: {
+          50: '#8d697a',
+          100: '#544e68',
+          200: '#203c56',
+          300: '#0d2b45'
+        },
+        lightish: {
+          50: '#ffecd6',
+          100: '#ffd4a3',
+          200: '#ffaa5e',
+          300: '#d08159'
+        },
+        main: {
+          'cream-white-1': "#fffffe",
+          'dark-brown': "#33272a",
+          'normal-brown': "#594a4e",
+          'cream-white-2': "#faeee7",
+          'dark-brown-2': "#33272a",
+          'red': "#ff8ba7"
+        }
+      }
     },
   },
   plugins: [
