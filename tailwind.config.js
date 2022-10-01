@@ -26,12 +26,12 @@ module.exports = {
           300: '#d08159'
         },
         main: {
-          background: "#fffffe",
-          hadline: "#33272a",
-          subheadline: "#594a4e",
-          cardbackground: "#faeee7",
-          cardheading: "#33272a",
-          cardparagraph: "#594a4e",
+          'cream-white-1': "#fffffe",
+          'dark-brown': "#33272a",
+          'normal-brown': "#594a4e",
+          'cream-white-2': "#faeee7",
+          'dark-brown-2': "#33272a",
+          'red': "#ff8ba7"
         }
       }
     },
