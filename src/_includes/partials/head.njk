@@ -2,18 +2,31 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Eleventy">
+{%- if description %}
+<meta name="description" content="{{description}}">
+{%- else -%}
 <meta name="description" content="Frontend Web Developer, Game Dev Hobbyist, Night Owl, Synthwave & Vaporwave Lover">
+{%- endif -%}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@indrajithKLIS">
 <meta name="twitter:creator" content="@indrajithKLIS">
-<meta name="twitter:url" content="https://indrajith.dev/">
+<meta name="twitter:url" content="https://indrajith.dev{{page.url}}">
+<meta name="generator" content="Eleventy">
+{%- if description %}
+<meta name="twitter:description" content="{{description}}">
+{%- else -%}
 <meta name="twitter:description" content="Frontend Web Developer, Game Dev Hobbyist, Night Owl, Synthwave & Vaporwave Lover">
+{%- endif -%}
 <meta name="twitter:image" content="https://indrajith.dev/images/me.png">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://indrajith.dev/">
+<meta property="og:url" content="https://indrajith.dev{{page.url}}">
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="Indrajith K L">
+{%- if description %}
+<meta property="og:description" content="{{description}}">
+{%- else -%}
 <meta property="og:description" content="Frontend Web Developer, Game Dev Hobbyist, Night Owl, Synthwave & Vaporwave Lover">
+{%- endif -%}
 <meta property="og:image" content="https://indrajith.dev/images/me.png">
 <link rel="stylesheet" href="/global.css">
 {% favicon './favicon.svg' %}
