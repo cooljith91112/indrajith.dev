@@ -134,3 +134,8 @@ pre[class*="language-"] {
 .token.entity {
 	cursor: help;
 }
+
+.article-intro::first-letter {
+	font-size: 2rem;
+    font-weight: bold;
+}

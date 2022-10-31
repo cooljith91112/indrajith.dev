@@ -1,0 +1,186 @@
+{
+  "gameTools": [
+    {
+      "toolName": "Babylon.js",
+      "type": "Game Engine",
+      "graphics": "3D",
+      "link": "https://www.babylonjs.com/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "Blender",
+      "type": "3D Graphics Editor",
+      "graphics": "3D",
+      "link": "https://www.blender.org/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "Ct.JS",
+      "type": "Game Engine",
+      "graphics": "2D",
+      "link": "https://ctjs.rocks/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "Defold",
+      "type": "Game Engine",
+      "graphics": "2D",
+      "link": "https://defold.com/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "Dome Engine",
+      "type": "Game Framework",
+      "graphics": "2D",
+      "link": "https://domeengine.com/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "Gdevelop",
+      "type": "Game Engine",
+      "graphics": "2D, 3D*",
+      "link": "https://gdevelop.io/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "Gideros",
+      "type": "Game Engine",
+      "graphics": "2D & 3D",
+      "link": "http://giderosmobile.com/",
+      "os": "Windows, Mac OS"
+    },
+    {
+      "toolName": "Godot",
+      "type": "Game Engine",
+      "graphics": "2D & 3D",
+      "link": "https://godotengine.org/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "HaxeFlixel",
+      "type": "Game Framework",
+      "graphics": "2D",
+      "link": "https://haxeflixel.com/",
+      "os": "Windows,Linux, Mac OS"
+    },
+    {
+      "toolName": "Heaps",
+      "type": "Game Framework",
+      "graphics": "2D & 3D",
+      "link": "https://heaps.io/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "ink",
+      "type": "Interactive Fiction",
+      "graphics": "N/A",
+      "link": "https://www.inklestudios.com/ink/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "klystracker",
+      "type": "Chiptune Tracker",
+      "graphics": "N/A",
+      "link": "https://kometbomb.github.io/klystrack/",
+      "os": "Windows"
+    },
+    {
+      "toolName": "LibreSprite",
+      "type": "Sprite Editor",
+      "graphics": "2D",
+      "link": "https://libresprite.github.io/",
+      "os": "Windows, Linux"
+    },
+    {
+      "toolName": "LÖVE 2D",
+      "type": "Game Framework",
+      "graphics": "2D",
+      "link": "https://love2d.org/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "Monogame",
+      "type": "Game Framework",
+      "graphics": "2D & 3D",
+      "link": "https://www.monogame.net/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "OpenMPT",
+      "type": "Chiptune Tracker",
+      "graphics": "N/A",
+      "link": "https://openmpt.org/",
+      "os": "Windows"
+    },
+    {
+      "toolName": "Panda 3D",
+      "type": "Game Engine",
+      "graphics": "3D",
+      "link": "https://www.panda3d.org/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "Phaser",
+      "type": "Game Library",
+      "graphics": "2D",
+      "link": "https://phaser.io/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "Piskel ",
+      "type": "Sprite Editor",
+      "graphics": "2D",
+      "link": "https://www.piskelapp.com/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "pixi.js",
+      "type": "Graphics Library",
+      "graphics": "2D",
+      "link": "https://pixijs.com/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "Pygame",
+      "type": "Game Framework",
+      "graphics": "2D",
+      "link": "https://www.pygame.org/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "RenPy",
+      "type": "Game Framework",
+      "graphics": "2D",
+      "link": "https://www.renpy.org/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "SDL",
+      "type": "Game Library",
+      "graphics": "2D/3D?",
+      "link": "https://www.libsdl.org/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "SFML",
+      "type": "Game Library",
+      "graphics": "2D",
+      "link": "https://www.sfml-dev.org/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "Tads3",
+      "type": "Interactive Fiction",
+      "graphics": "N/A",
+      "link": "https://www.tads.org/tads3.htm",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "Twine",
+      "type": "Interactive Fiction",
+      "graphics": "N/A",
+      "link": "https://twinery.org/",
+      "os": "Windows, Linux, Mac OS"
+    }
+  ]
+}

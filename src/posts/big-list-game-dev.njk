@@ -1,0 +1,63 @@
+---
+layout: posts.njk
+title: Big List of Open Source Game Development Tools
+---
+
+<p class="article-intro indent-8">
+    People always think game development is an expensive thing, because most of 
+    the time when we search about game development we will discouraged by either 
+    the subscription amount or the percentage cut of the so called AAA engines. 
+    Yes you can makes games with those tools nobody is going to stop you, but the thing is by using
+    open source tools and engines you are not bound to restrictive tools, you can adapt, modify and even
+    introduce your own functionality in the tools/engine you are using.
+</p>
+
+<p class="mt-5">Welcome to the big list (eventually it will be) of always updating list of<span class="font-bold">Open Source Game Development Tools</span>.
+    Here you find not only Game Engines but other open source tools and utilities that will help you
+    in developing your dream game/prototypes.
+</p>
+<p class="mt-5">
+    <div class="overflow-x-auto relative shadow-md lg:rounded-lg border-main-dark-brown-2">
+        <table class="mx-auto max-w-4xl w-full text-sm text-left table-auto">
+            <thead class="text-xs uppercase bg-main-normal-brown border-b border-main-dark-brown-2">
+                <tr>
+                    <th scope="col" class="py-3 px-6 bg-lightish-50">
+                    Tool
+                </th>
+                    <th scope="col" class="py-3 px-6 text-main-cream-white-1">
+                    Tool Type
+                </th>
+                    <th scope="col" class="py-3 px-6 bg-lightish-50">
+                    Supported Graphics
+                </th>
+                    <th scope="col" class="py-3 px-6 text-main-cream-white-1">
+                    OS Supported
+                </th>
+                    <th scope="col" class="py-3 px-6 bg-lightish-50">
+                    Link
+                </th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for tool in gtools.gameTools%}
+                    <tr class="bg-main-normal-brown border-b border-main-dark-brown-2">
+                        <th scope="row" class="py-4 px-6 font-medium whitespace-nowrap bg-lightish-50">{{tool.toolName}}
+                        </th>
+                        <td class="py-4 px-6 text-main-cream-white-1">
+                            {{tool.type}}
+                        </td>
+                        <td class="py-4 px-6 bg-lightish-50">
+                            {{tool.graphics}}
+                        </td>
+                        <td class="py-4 px-6 text-main-cream-white-1">
+                            {{tool.os}}
+                        </td>
+                        <td class="py-4 px-6 bg-lightish-50">
+                            <a href={{tool.link}} class="font-medium hover:underline">{{tool.link}}</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</p>
