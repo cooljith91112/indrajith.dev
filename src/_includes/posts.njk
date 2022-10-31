@@ -5,8 +5,8 @@
     </head>
     <body class="flex h-screen flex-col font-supply-regular bg-main-cream-white-2">
         {% include "./partials/header.njk" %}
-        <main class="container mx-auto max-w-5xl p-8">
-            <section class="w-full flex flex-col items-center px-3">
+        <main class="container mx-auto w-full p-8">
+            <section class="flex-col items-center px-3">
                 <article class="flex flex-col my-4">
                     <div class="flex flex-col justify-start p-6 ">
                         <div>
@@ -18,16 +18,16 @@
                         </div>
                     </div>
                 </article>
-                <div class="flex flex-col text-left text-xs">
-                    <span class="text-left">If you found this article useful, spread the word by sharing this link 👉
-                        <span class="w-1 text-left absolute ml-2 my-0">
+                <div class="flex flex-col text-xs text-center">
+                    <span>If you found this article useful, spread the word by sharing this link 👉
+                        <span class="w-1 absolute ml-2 my-0">
                             <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-via="indrajithKLIS" data-hashtags="#gamedev #indiegamedev #gametools" data-show-count="false">Tweet</a>
                             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                         </span>
                     </span>
                 </div>
-                <div class="flex flex-col my-4">
-                    <a class="flex flex-col justify-start" href="/posts">back to posts</a>
+                <div class="my-4">
+                    <a class="justify-start bg-main-red rounded-md p-3 text-main-cream-white-1" href="/posts"><span class="absolute">{% feather "arrow-left" %}</span> <span class="ml-7">back to posts</span></a>
                 </div>
             </section>
 
