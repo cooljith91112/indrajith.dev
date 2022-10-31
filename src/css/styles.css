@@ -139,3 +139,7 @@ pre[class*="language-"] {
 	font-size: 2rem;
     font-weight: bold;
 }
+
+svg {
+	display: unset;
+}

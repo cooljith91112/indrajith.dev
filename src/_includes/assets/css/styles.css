@@ -798,6 +798,10 @@ select {
   float: right;
 }
 
+.float-left {
+  float: left;
+}
+
 .m-4 {
   margin: 1rem;
 }
@@ -1505,12 +1509,12 @@ select {
   padding-bottom: 1.25rem;
 }
 
-.pl-2 {
-  padding-left: 0.5rem;
-}
-
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
 }
 
 .pb-6 {
@@ -1519,6 +1523,10 @@ select {
 
 .pl-1 {
   padding-left: 0.25rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
 }
 
 .text-left {
@@ -1573,14 +1581,14 @@ select {
   line-height: 1.75rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-base {
@@ -1960,6 +1968,10 @@ pre[class*="language-"] {
 .article-intro::first-letter {
   font-size: 2rem;
   font-weight: bold;
+}
+
+svg {
+  display: unset;
 }
 
 .hover\:bg-indigo-700:hover {
