@@ -50,6 +50,13 @@
       "os": "Windows, Mac OS"
     },
     {
+      "toolName": "Gimp",
+      "type": "Raster Graphics Editor",
+      "graphics": "2D",
+      "link": "https://www.gimp.org/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
       "toolName": "Godot",
       "type": "Game Engine",
       "graphics": "2D & 3D",
@@ -78,11 +85,25 @@
       "os": "Windows, Linux, Mac OS"
     },
     {
+      "toolName": "Inkscape",
+      "type": "Vector Grapics Editor",
+      "graphics": "2D",
+      "link": "https://inkscape.org/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
       "toolName": "klystracker",
       "type": "Chiptune Tracker",
       "graphics": "N/A",
       "link": "https://kometbomb.github.io/klystrack/",
       "os": "Windows"
+    },
+    {
+      "toolName": "Krita",
+      "type": "Raster Graphics Editor",
+      "graphics": "2D",
+      "link": "https://krita.org/",
+      "os": "Windows, Linux, Mac OS"
     },
     {
       "toolName": "LibreSprite",
