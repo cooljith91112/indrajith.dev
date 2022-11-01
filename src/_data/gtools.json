@@ -8,6 +8,13 @@
       "os": "Windows, Linux, Mac OS"
     },
     {
+      "toolName": "Bevy",
+      "type": "Game Engine",
+      "graphics": "2D, 3D",
+      "link": "https://bevyengine.org/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
       "toolName": "Blender",
       "type": "3D Graphics Editor",
       "graphics": "3D",
@@ -33,6 +40,13 @@
       "type": "Game Framework",
       "graphics": "2D",
       "link": "https://domeengine.com/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "Ebitengine ",
+      "type": "Game Engine",
+      "graphics": "2D",
+      "link": "https://ebitengine.org/",
       "os": "Windows, Linux, Mac OS"
     },
     {
