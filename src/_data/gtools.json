@@ -1,6 +1,13 @@
 {
   "gameTools": [
     {
+      "toolName": "Audacity",
+      "type": "Music Editor",
+      "graphics": "N/A",
+      "link": "https://www.audacityteam.org/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
       "toolName": "Babylon.js",
       "type": "Game Engine",
       "graphics": "3D",
@@ -43,10 +50,17 @@
       "os": "Windows, Linux, Mac OS"
     },
     {
-      "toolName": "Ebitengine ",
+      "toolName": "Ebitengine",
       "type": "Game Engine",
       "graphics": "2D",
       "link": "https://ebitengine.org/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "Flame",
+      "type": "Game Engine",
+      "graphics": "2D",
+      "link": "https://flame-engine.org/",
       "os": "Windows, Linux, Mac OS"
     },
     {
@@ -125,6 +139,13 @@
       "graphics": "2D",
       "link": "https://libresprite.github.io/",
       "os": "Windows, Linux"
+    },
+    {
+      "toolName": "LMMS",
+      "type": "Music & Audio (DAW)",
+      "graphics": "N/A",
+      "link": "https://lmms.io/",
+      "os": "Windows, Linux, Mac OS"
     },
     {
       "toolName": "LÖVE 2D",
