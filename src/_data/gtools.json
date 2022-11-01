@@ -212,14 +212,14 @@
     },
     {
       "toolName": "SDL",
-      "type": "Game Library",
+      "type": "Library",
       "graphics": "2D/3D?",
       "link": "https://www.libsdl.org/",
       "os": "Windows, Linux, Mac OS"
     },
     {
       "toolName": "SFML",
-      "type": "Game Library",
+      "type": "Library",
       "graphics": "2D",
       "link": "https://www.sfml-dev.org/",
       "os": "Windows, Linux, Mac OS"
