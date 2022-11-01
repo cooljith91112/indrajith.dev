@@ -225,6 +225,20 @@
       "os": "Windows, Linux, Mac OS"
     },
     {
+      "toolName": "Solar2D",
+      "type": "Game Engine",
+      "graphics": "2D",
+      "link": "https://solar2d.com/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "Solarus",
+      "type": "Game Engine",
+      "graphics": "2D",
+      "link": "https://www.solarus-games.org/",
+      "os": "Windows, Linux, Raspberry Pi, Mac OS"
+    },
+    {
       "toolName": "Tads3",
       "type": "Interactive Fiction",
       "graphics": "N/A",
