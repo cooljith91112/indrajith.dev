@@ -1,7 +1,13 @@
----
-layout: posts.njk
-title: Big List of Open Source Game Development Tools
-description: Big List of Open Source Game Development Tools
+---js
+{
+    layout: "posts.njk",
+    title: "Big List of Open Source Game Development Tools",
+    description: "Big List of Open Source Game Development Tools",
+    date: "Created",
+    modified: function() {
+        return (new Date().toUTCString())
+    }
+}
 ---
 
 <p class="mt-5">Welcome to the big list (eventually it will be) of always updating bucket of <span class="font-bold">Open Source Game Development Tools</span>.
