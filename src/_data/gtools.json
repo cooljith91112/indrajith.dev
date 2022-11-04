@@ -134,6 +134,13 @@
       "os": "Windows, Linux, Mac OS"
     },
     {
+      "toolName": "LDtk",
+      "type": "Level Designer",
+      "graphics": "2D",
+      "link": "https://ldtk.io/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
       "toolName": "LibreSprite",
       "type": "Sprite Editor",
       "graphics": "2D",
@@ -159,6 +166,13 @@
       "type": "Game Framework",
       "graphics": "2D & 3D",
       "link": "https://www.monogame.net/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "Ogmo Editor",
+      "type": "Level Designer",
+      "graphics": "2D",
+      "link": "https://ogmoeditor.itch.io/editor",
       "os": "Windows, Linux, Mac OS"
     },
     {
@@ -194,6 +208,20 @@
       "type": "Graphics Library",
       "graphics": "2D",
       "link": "https://pixijs.com/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "Pixel Composer",
+      "type": "2D VFX",
+      "graphics": "2D",
+      "link": "https://makham.itch.io/pixel-composer",
+      "os": "Windows"
+    },
+    {
+      "toolName": "Pixel Vision 8",
+      "type": "Fantasy Console",
+      "graphics": "2D",
+      "link": "https://pixelvision8.github.io/Website/",
       "os": "Windows, Linux, Mac OS"
     },
     {
@@ -243,6 +271,13 @@
       "type": "Interactive Fiction",
       "graphics": "N/A",
       "link": "https://www.tads.org/tads3.htm",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
+      "toolName": "Tiled",
+      "type": "Level Designer",
+      "graphics": "2D",
+      "link": "https://www.mapeditor.org/",
       "os": "Windows, Linux, Mac OS"
     },
     {
