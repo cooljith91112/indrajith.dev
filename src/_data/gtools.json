@@ -162,6 +162,13 @@
       "os": "Windows, Linux, Mac OS"
     },
     {
+      "toolName": "microStudio",
+      "type": "Game Engine",
+      "graphics": "2D & 3D",
+      "link": "https://microstudio.dev/",
+      "os": "Windows, Linux, Mac OS"
+    },
+    {
       "toolName": "Monogame",
       "type": "Game Framework",
       "graphics": "2D & 3D",
