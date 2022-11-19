@@ -1,145 +1,126 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
 @font-face {
-    font-family: supplyRegular;
-    src: url(./fonts/PPSupplyMono-Regular.otf);
+	font-family: 'MarioWorld';
+	src: url("./fonts/Cotory-rgwd9.ttf");
 }
 
-@font-face {
-    font-family: supplyLight;
-    src: url(./fonts/PPSupplyMono-Ultralight.otf);
+html,body {
+	margin: 0;
+	padding: 0;
 }
 
-code[class*="language-"],
-pre[class*="language-"] {
-	color: #657b83; /* base00 */
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	font-size: 1em;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	word-wrap: normal;
-
-	line-height: 1.5;
-
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
-
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
+body {
+	font-family: 'IBM Plex Mono', monospace;
+	max-width: 900px;
+	margin: auto;
+	background: #ffffd6;
 }
 
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-	background: #073642; /* base02 */
+footer {
+	bottom: 0px;
+	left: 0;
+	text-align: center;
+	width: 100%;
 }
 
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-code[class*="language-"]::selection, code[class*="language-"] ::selection {
-	background: #073642; /* base02 */
+* {
+	box-sizing: border-box;
 }
 
-/* Code blocks */
-pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0;
-	overflow: auto;
-	border-radius: 0.3em;
+.header {
+	text-align: center;
+}
+.header nav {
+	display: block;
 }
 
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-	background-color: #fdf6e3; /* base3 */
+.header ul, footer ul {
+	padding: 0px;
 }
 
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
+.header ul>li {
+	display: inline-block;
+	padding: 10px;
+	text-align: center;
 }
 
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-	color: #93a1a1; /* base1 */
-}
-
-.token.punctuation {
-	color: #586e75; /* base01 */
-}
-
-.token.namespace {
-	opacity: .7;
-}
-
-.token.property,
-.token.tag,
-.token.boolean,
-.token.number,
-.token.constant,
-.token.symbol,
-.token.deleted {
-	color: #268bd2; /* blue */
-}
-
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.url,
-.token.inserted {
-	color: #2aa198; /* cyan */
-}
-
-.token.entity {
-	color: #657b83; /* base00 */
-	background: #eee8d5; /* base2 */
-}
-
-.token.atrule,
-.token.attr-value,
-.token.keyword {
-	color: #859900; /* green */
-}
-
-.token.function,
-.token.class-name {
-	color: #b58900; /* yellow */
-}
-
-.token.regex,
-.token.important,
-.token.variable {
-	color: #cb4b16; /* orange */
-}
-
-.token.important,
-.token.bold {
+.header ul>li a {
+	text-decoration: none;
+	font-size: 15px;
+	color: #000000;
 	font-weight: bold;
 }
-.token.italic {
+
+.text-center {
+	/* text-align: center; */
+}
+
+footer ul>li {
+	display: inline-block;
+}
+
+footer ul>li>p {
+	margin-block-end: unset;
+}
+
+
+.logo {
+	text-decoration: none;
+	font-family: 'MarioWorld', sans-serif;
+	font-size: 150%;
+	color: #000000;
+}
+
+.mt-10 {
+	margin-top: 10px;
+}
+
+.font-bold {
+	font-weight: bold;
+}
+
+.font-italics {
 	font-style: italic;
 }
 
-.token.entity {
-	cursor: help;
+table {
+	border-collapse: collapse;
 }
 
-.article-intro::first-letter {
-	font-size: 2rem;
-    font-weight: bold;
+th, tr, td {
+	border: 1px solid;
 }
 
-svg {
-	display: unset;
+table tr {
+	padding-bottom: 10px;
+}
+
+table th {
+	padding-right: 20px;
+}
+
+table td {
+	padding: 10px;
+}
+
+.post-date {
+	font-size: 15px;
+	font-style: italic;
+}
+
+.post-lists li {
+	list-style-type: '◆  ';
+	margin-bottom: 5px;
+}
+
+@media (max-width:1000px)  {
+    body {
+        font-size: 80%;
+        padding: 3%;
+    }
+    #blog img{
+        max-width: 80%;
+    }
 }

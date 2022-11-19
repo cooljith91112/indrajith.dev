@@ -3,22 +3,15 @@ layout: base.njk
 eleventyExcludeFromCollections: true
 title: Posts
 ---
-<h2 class="text-2xl font-bold  text-darkish-300 p-2">Published Posts</h2>
-<div class="post-lists mt-2">
-    {% for post in collections.posts | reverse %}
-        <div class="post-data">
-            <div class="post-date p-2 bg-darkish-100 text-lightish-50 shadow-[5px_5px_0px_0px_rgba(0,0,0,255)]">
-                {{post.date | dateFilter}}
-            </div>
-            <div class="post-title m-4 text-lightish-300 hover:text-darkish-300">
-                <a href="{{post.url}}"> {{post.data.title}}</a>
-            </div>
-        </div>
-    {% else %}
-        <div class="text-center flex justify-center text-lightish-300">
-            <span>No Posts </span>
-            <span class="pl-2">¯\_(ツ)_/¯</span>
-        </div>
-    {% endfor %}
-    
-</div>
+<h2>Published Posts</h2>
+
+{% for dateP, yearPosts in collections.postsByYear %}
+    <div class="date-based">
+        <h3>{{ dateP }}</h3>
+        <ul class="post-lists">
+            {% for post in yearPosts | reverse %}
+                <li><a href="{{post.url}}">{{ post.data.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endfor %}

@@ -3,9 +3,10 @@
 <head>
 {% include "./partials/head.njk" %}
 </head>
-<body class="flex h-screen flex-col bg-main-cream-white-2">
+<body>
     {% include "./partials/header.njk" %}
-    <main class="container mx-auto">
+    <hr>
+    <main>
         <article >
             {{content | safe}}
         </article>

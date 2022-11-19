@@ -3,47 +3,47 @@
     layout: "posts.njk",
     title: "Big List of Open Source Game Development Tools",
     description: "Big List of Open Source Game Development Tools",
-    date: "Created",
+    date: new Date("27 October 2022"),
     modified: function() {
-        return (new Date().toUTCString())
+        return (new Date("20 November 2022").toUTCString())
     }
 }
 ---
 
-<p class="mt-5">Welcome to the big list (eventually it will be) of always updating bucket of <span class="font-bold">Open Source Game Development Tools</span>.
+<p>Welcome to the big list (eventually it will be) of always updating bucket of <span class="font-bold">Open Source Game Development Tools</span>.
     Here you find not only Game Engines but other open source tools and utilities that will help you
     in developing your dream game/prototypes.
 </p>
-<div class="mt-5">
-    <div class="overflow-auto">
-        <table class="min-w-full">
-            <thead class="border-b uppercase">
+<div>
+    <div>
+        <table>
+            <thead>
                 <tr>
-                    <th scope="col" class="text-sm font-bold text-gray-900 px-6 py-4 text-left"></th>
-                    <th scope="col" class="text-sm font-bold text-gray-900 px-6 py-4 text-left">
+                    <th scope="col"></th>
+                    <th scope="col">
                                 Tool Type
                             </th>
-                    <th scope="col" class="text-sm font-bold text-gray-900 px-6 py-4 text-left">
+                    <th scope="col">
                                 Supported Graphics
                             </th>
-                    <th scope="col" class="text-sm font-bold text-gray-900 px-6 py-4 text-left">
+                    <th scope="col">
                                 Development Environment
                             </th>
                 </tr>
             </thead>
             <tbody>
                 {% for tool in gtools.gameTools%}
-                    <tr class="border-b">
-                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap underline">
+                    <tr>
+                        <td>
                             <a href={{tool.link}}>{{tool.toolName}}</a>
                         </td>
-                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                        <td>
                             {{tool.type}}
                         </td>
-                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                        <td>
                             {{tool.graphics}}
                         </td>
-                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                        <td>
                             {{tool.os}}
                         </td>
                     </tr>
@@ -52,6 +52,6 @@
         </table>
     </div>
 </div>
-<div class="pt-5 text-xs md:text-justify text-left">
-    <span class="text-center">If you want to add a tool or engine to this list or if you have any complaint with this article feel free to drop a mail @ <span class="font-bold">indrajith(at)indrajith(dot)dev</span></span>
+<div class="mt-10">
+    <span>If you want to add a tool or engine to this list or if you have any complaint with this article feel free to drop a mail @ <span class="font-bold">indrajith(at)indrajith(dot)dev</span></span>
 </div>

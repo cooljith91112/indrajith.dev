@@ -5,10 +5,11 @@ const faviconPlugin = require("eleventy-favicon");
 const eleventyPluginFeathericons = require("eleventy-plugin-feathericons");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const _ = require("lodash");
 
 module.exports = function (config) {
     config.addPassthroughCopy({
-        "src/_includes/assets/css/styles.css": "./global.css",
+        "src/css/styles.css": "./styles.css",
     });
     config.addPassthroughCopy({
         "src/css/fonts": "./fonts",
@@ -33,10 +34,26 @@ module.exports = function (config) {
     });
 
     function filterTagList(tags) {
-        return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
+        return (tags || []).filter(
+            (tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1
+        );
     }
 
-    config.addFilter("filterTagList", filterTagList)
+    config.addCollection("postsByYear", (collection) => {
+        return _.chain(
+            collection.getAllSorted().filter((post) => {
+                return post.data.tags?.includes("posts");
+            })
+        )
+            .groupBy((post) => {
+                return dayjs(post.date).format("DD MMM YYYY");
+            })
+            .toPairs()
+            .reverse()
+            .value();
+    });
+
+    config.addFilter("filterTagList", filterTagList);
 
     return {
         dir: {
