@@ -7,7 +7,12 @@
 {%- else -%}
 <meta name="description" content="Frontend Web Developer, Game Dev Hobbyist, Night Owl, Synthwave & Vaporwave Lover">
 {%- endif -%}
+{%- if cover %}
+<meta name="twitter:card" content="https://indrajith.dev{{cover}}">
+{%- else -%}
 <meta name="twitter:card" content="summary_large_image">
+{%- endif -%}
+
 <meta name="twitter:site" content="@indrajithKLIS">
 <meta name="twitter:creator" content="@indrajithKLIS">
 <meta name="twitter:url" content="https://indrajith.dev{{page.url}}">
