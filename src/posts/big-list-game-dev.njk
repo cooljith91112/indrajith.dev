@@ -15,41 +15,26 @@
     in developing your dream game/prototypes.
 </p>
 <div>
-    <div>
-        <table>
-            <thead>
-                <tr>
-                    <th scope="col"></th>
-                    <th scope="col">
-                                Tool Type
-                            </th>
-                    <th scope="col">
-                                Supported Graphics
-                            </th>
-                    <th scope="col">
-                                Development Environment
-                            </th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for tool in gtools.gameTools%}
-                    <tr>
-                        <td>
-                            <a href={{tool.link}}>{{tool.toolName}}</a>
-                        </td>
-                        <td>
-                            {{tool.type}}
-                        </td>
-                        <td>
-                            {{tool.graphics}}
-                        </td>
-                        <td>
-                            {{tool.os}}
-                        </td>
-                    </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+    <div class="tools-container">
+        {% for tool in gtools.gameTools%}
+            <div class="tool">
+                <div class="tool-name">
+                    <a href={{tool.link}}>{{tool.toolName}}</a>
+                </div>
+                <div class="tool-type mt-10">
+                    <label for="tool-type">Type : </label>
+                    {{tool.type}}
+                </div>
+                <div class="tool-graphics">
+                    <label for="tool-graphics">Graphics Supported : </label>
+                    {{tool.graphics}}
+                </div>
+                <div class="tool-os">
+                    <label for="tool-os">Development OS: </label>
+                    {{tool.os}}
+                </div>
+            </div>
+        {% endfor %}
     </div>
 </div>
 <div class="mt-10">
