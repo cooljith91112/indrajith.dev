@@ -75,6 +75,7 @@ footer ul>li {
 
 footer ul>li>p {
 	margin-block-end: unset;
+	margin-block-start: unset;
 }
 
 
