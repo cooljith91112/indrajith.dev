@@ -7,4 +7,19 @@ title: Contact
     <li>
         Email: indrajith @ indrajith.dev
     </li>
+    <li id="origin-website">
+        (🌐) <a href="https://indrajith.dev">https://indrajith.dev</a>
+    </li>
 </ul>
+<style>
+    #origin-website {
+        display:none;
+    }
+</style>
+
+<script>
+const websiteLink = document.getElementById("origin-website");
+if (location.host.includes("neocities")) {
+    websiteLink.style.display = "block";
+}
+</script>

@@ -6,3 +6,10 @@
     </ul>
     <div id="wcb" class="carbonbadge wcb-d"></div>
 </footer>
+
+<script>
+    const carbonBadge = document.getElementById("wcb");
+    if(location.host.includes("neocities")) {
+        carbonBadge.remove();
+    }
+</script>
