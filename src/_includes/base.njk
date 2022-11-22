@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-{% include "./partials/head.njk" %}
-</head>
-<body>
-    {% include "./partials/header.njk" %}
-    <hr>
-    <main>
-        <section>
-            <article>
-                <div>
-                    <div>
-                        {{content | safe}}
-                    </div>
-                </div>
-            </article>
-        </section>
-    </main>
-    {% include "./partials/footer.njk" %}
-</body>
+    <head>
+        {% include "./partials/head.njk" %}
+    </head>
+    <body>
+        <div class="container">
+            {% include "./partials/header.njk" %}
+            <hr>
+            <main>
+                <section>
+                    <article>
+                        <div>
+                            <div>
+                                {{content | safe}}
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </main>
+            {% include "./partials/footer.njk" %}
+        </div>
+    </body>
 </html>

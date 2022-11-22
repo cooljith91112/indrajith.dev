@@ -6,6 +6,11 @@
 	src: url("./fonts/Cotory-rgwd9.ttf");
 }
 
+:root {
+	--body-bg-image: url('/images/aqua.gif');
+}
+
+
 html,
 body {
 	margin: 0;
@@ -17,6 +22,7 @@ body {
 	max-width: 900px;
 	margin: auto;
 	background: #ffffd6;
+	background-image: var(--body-bg-image);
 }
 
 footer {

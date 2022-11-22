@@ -4,38 +4,40 @@
         {% include "./partials/head.njk" %}
     </head>
     <body>
-        {% include "./partials/header.njk" %}
-        <hr>
-        <main>
-            <section>
-                <article>
-                    <div>
+        <div class="container">
+            {% include "./partials/header.njk" %}
+            <hr>
+            <main>
+                <section>
+                    <article>
                         <div>
-                            <h2>{{title}}</h2>
-                            <p class="post-date">(published on {{page.date.toUTCString() | dateFilter}})</p>
+                            <div>
+                                <h2>{{title}}</h2>
+                                <p class="post-date">(published on {{page.date.toUTCString() | dateFilter}})</p>
+                            </div>
+                            <div>
+                                {{content | safe}}
+                            </div>
                         </div>
-                        <div>
-                            {{content | safe}}
-                        </div>
-                    </div>
-                </article>
-                <div class="mt-10">
-                    <span>If you found this article useful, spread the word by sharing this link 👉
+                    </article>
+                    <div class="mt-10">
+                        <span>If you found this article useful, spread the word by sharing this link 👉
                         <span>
-                            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-via="indrajithKLIS" data-hashtags="gamedev #indiegamedev #gametools" data-show-count="false">Tweet</a>
-                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-via="indrajithKLIS" data-hashtags="gamedev #indiegamedev #gametools" data-show-count="false">Tweet</a>
+                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </span>
                         </span>
-                    </span>
-                </div>
-                <div class="mt-10">
-                    <span class="font-italics">Post Last Modified: <span class="font-bold">{{modified() | dateFilter}}</span></span>
-                </div>
-                <div class="mt-10">
-                    <a href="/posts">back to posts</a>
-                </div>
-            </section>
+                    </div>
+                    <div class="mt-10">
+                        <span class="font-italics">Post Last Modified: <span class="font-bold">{{modified() | dateFilter}}</span></span>
+                    </div>
+                    <div class="mt-10">
+                        <a href="/posts">back to posts</a>
+                    </div>
+                </section>
 
-        </main>
-        {% include "./partials/footer.njk" %}
+            </main>
+            {% include "./partials/footer.njk" %}
+        </div>
     </body>
 </html>
