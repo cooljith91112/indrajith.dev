@@ -13,19 +13,18 @@ alternatetitle: "Hello Friend!! My name is Indrajith K L."
 </div>
 
 <div>
-    <h3>Recent Posts</h3>
-    <div>
+    <h4>Recent Posts</h4>
+    <ul>
         {% for post in collections.posts | reverse %}
             {% if (loop.index <= 4) %}
-                <div>
-                    <p>{{post.data.title}}</p>
-                    <div><a href="{{post.url}}">Read more</span></a></div>
-                </div>
+                <li>
+                    <p>{{post.data.title}} <a href="{{post.url}}">Read more</span></a></p>
+                </li>
             {% endif %}
         {% else %}
-            <div>
-                    <p>No Posts</p>
-            </div>
+            <li>
+                <p>No Posts</p>
+            </li>
         {% endfor %}
-    </div>
+    </ul>
 </div>
