@@ -262,3 +262,21 @@ img {
 .tools-container label{
 	font-weight: bold;
 }
+
+p.first-letter::first-letter {
+	font-size: 150%;
+}
+
+.highlight {
+	background: #000000;
+    padding: 2px;
+    color: #ffffff;
+}
+
+.highlight.tags {
+	border-radius: 8px;
+}
+
+.article {
+	line-height: 25px;
+}

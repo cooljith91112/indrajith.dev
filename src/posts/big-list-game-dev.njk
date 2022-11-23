@@ -10,38 +10,40 @@
     cover: "/images/open-source.jpg"
 }
 ---
+<div>
 
-<p>
-    <img src="/images/open-source.jpg" width="" alt="">
-</p>
+    <p>
+        <img src="/images/open-source.jpg" width="" alt="">
+    </p>
 
-<p>Welcome to the big list (eventually it will be) of always updating bucket of <span class="font-bold">Open Source Game Development Tools</span>.
+    <p class="first-letter">Welcome to the big list (eventually it will be) of always updating bucket of <span class="font-bold">Open Source Game Development Tools</span>.
     Here you find not only Game Engines but other open source tools and utilities that will help you
     in developing your dream game/prototypes.
-</p>
-<div>
-    <div class="tools-container">
-        {% for tool in gtools.gameTools%}
-            <div class="tool">
-                <div class="tool-name">
-                    <a href={{tool.link}}>{{tool.toolName}}</a>
+    </p>
+    <div>
+        <div class="tools-container">
+            {% for tool in gtools.gameTools%}
+                <div class="tool">
+                    <div class="tool-name">
+                        <a href={{tool.link}}>{{tool.toolName}}</a>
+                    </div>
+                    <div class="tool-type mt-10">
+                        <label for="tool-type">Type : </label>
+                        {{tool.type}}
+                    </div>
+                    <div class="tool-graphics">
+                        <label for="tool-graphics">Graphics Supported : </label>
+                        {{tool.graphics}}
+                    </div>
+                    <div class="tool-os">
+                        <label for="tool-os">Development OS: </label>
+                        {{tool.os}}
+                    </div>
                 </div>
-                <div class="tool-type mt-10">
-                    <label for="tool-type">Type : </label>
-                    {{tool.type}}
-                </div>
-                <div class="tool-graphics">
-                    <label for="tool-graphics">Graphics Supported : </label>
-                    {{tool.graphics}}
-                </div>
-                <div class="tool-os">
-                    <label for="tool-os">Development OS: </label>
-                    {{tool.os}}
-                </div>
-            </div>
-        {% endfor %}
+            {% endfor %}
+        </div>
     </div>
-</div>
-<div class="mt-10">
-    <span>If you want to add a tool or engine to this list or if you have any complaint with this article feel free to drop a mail @ <span class="font-bold">indrajith(at)indrajith(dot)dev</span></span>
+    <div class="mt-10">
+        <span>If you want to add a tool or engine to this list or if you have any complaint with this article feel free to drop a mail @ <span class="font-bold">indrajith(at)indrajith(dot)dev</span></span>
+    </div>
 </div>
