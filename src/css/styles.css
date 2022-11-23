@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
 @font-face {
-	font-family: 'MarioWorld';
-	src: url("./fonts/Cotory-rgwd9.ttf");
+	font-family: 'Reflex';
+	src: url("./fonts/Reflex.ttf");
 }
 
 :root {
@@ -78,11 +78,14 @@ footer ul>li>p {
 	margin-block-start: unset;
 }
 
+.logo-container {
+	padding-top: 10px;
+}
 
 .logo {
 	text-decoration: none;
-	font-family: 'MarioWorld', sans-serif;
-	font-size: 150%;
+	font-family: 'Reflex', sans-serif;
+	font-size: 300%;
 	color: #000000;
 }
 
